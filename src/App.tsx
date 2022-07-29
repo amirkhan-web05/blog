@@ -14,14 +14,14 @@ function App() {
     <Header/>
       <Routes>
         <Route path="/" element={
-          <RequireAuth>
+          // <RequireAuth>
             <HomePage/>
-          </RequireAuth>
+          /* </RequireAuth> */
         }/>
         <Route path="/blog" element={
-          <RequireAuth>
+          // <RequireAuth>
             <BlogPage/>
-          </RequireAuth>
+          /* </RequireAuth> */
         }/>
         <Route path="/fullpost/:id" element={<FullPost/>}/>
         <Route path='/register' element={<RegisterPage/>} />
