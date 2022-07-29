@@ -1,1 +1,1 @@
-web: node server.js
+web: json-server --watch server/db.json -m ./node_modules/json-server-auth --port 3001
