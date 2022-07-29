@@ -44,8 +44,8 @@ export const Post:React.FC = () => {
             {post.text}
           </p>
           <div>
-            {post.imageUrl.length === 1 ? post.imageUrl.map((image:any) => (
-              <Paper key={image.id} sx={{padding:2, marginBottom:2}}>
+            {post.imageUrl.length === 1 ? post.imageUrl.map((image:string, index:number) => (
+              <Paper key={`${image}_${index}`} sx={{padding:2, marginBottom:2}}>
                 <ImageListItem>
                   <img width={468} height={250} src={image} alt="" />
                 </ImageListItem>

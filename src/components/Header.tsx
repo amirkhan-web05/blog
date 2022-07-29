@@ -16,9 +16,6 @@ export const Header:React.FC = () => {
           <Typography sx={{ minWidth: 100 }}>
             <NavLink className='nav__link' to='/blog'>Blog</NavLink>
           </Typography>
-          <Typography sx={{ minWidth: 100 }}>
-            <NavLink className='nav__link' to='/contact'>Contact</NavLink>
-          </Typography>
           {!user && <Typography sx={{ minWidth: 100 }}>
             <NavLink className='nav__link' to='/register'>Register</NavLink>
           </Typography>}

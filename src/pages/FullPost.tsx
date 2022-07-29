@@ -17,7 +17,7 @@ export const FullPost: React.FC = () => {
     return Number(post.id) === Number(id)
   })
 
-  const onRemovePost = (id:any) => {
+  const onRemovePost = (id:number) => {
     dispatch(fetchRemovePost(id))
     navigate('/')
   }
