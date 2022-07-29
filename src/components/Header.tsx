@@ -26,9 +26,9 @@ export const Header:React.FC = () => {
             <NavLink className='nav__link' to='/users'>Users</NavLink>
           </Typography>
         </nav>
-        {/* <Typography component={'div'} sx={{ minWidth: 100 }} style={{marginLeft:'auto'}}>
+        <Typography component={'div'} sx={{ minWidth: 100 }} style={{marginLeft:'auto'}}>
           <Avatar alt={user && user.user.username} src="..."/>
-        </Typography> */}
+        </Typography>
       </Box>
     </Paper>
   )
