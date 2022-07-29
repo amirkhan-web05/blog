@@ -29,9 +29,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\"  \"json-server -p 3001 -w server/db.json\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "dev": "concurrently \"npm run start\" \"npm run server\"",
     "eject": "react-scripts eject",
     "server": "json-server --watch server/db.json -m ./node_modules/json-server-auth --port 3001"
   },
