@@ -33,24 +33,6 @@
       "password": "$2a$10$kz1ei2o/OV0phtl1LUmQbuGzhD9aguG19bLvoilyfKAPsgwv6JkVe",
       "username": "Amirkhan Magomedov",
       "id": 1
-    },
-    {
-      "email": "timur@timur.ru",
-      "password": "$2a$10$/eQGiNY5mcD.xny0rU2wCe8d66cI5Hg5LsZ9OV/zZKWgTBhZDjZ/G",
-      "username": "Timur Rodriges",
-      "id": 2
-    },
-    {
-      "email": "kratos@kratos.ru",
-      "password": "$2a$10$/UKgPN7V//uUHANErYGKWOYafCr1yvf3PXKHXqjzjga.KOMZeBOZu",
-      "username": "Kratos Simon",
-      "id": 3
-    },
-    {
-      "email": "makar@makar.ru",
-      "password": "$2a$10$HIlYSN.6nQGyy4vyYqAYbO1BJrUPpQp3rIAgw.Le3mGE993qZbW.C",
-      "username": "Makar Pushkin",
-      "id": 4
     }
   ]
 }
