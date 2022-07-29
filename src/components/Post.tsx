@@ -24,10 +24,10 @@ export const Post:React.FC = () => {
       {posts.length ? posts.map((post) => (
         <Paper key={post.id} elevation={3} sx={{width:'75%', maxWidth:'800px', height:'100%', marginLeft:10, marginBottom:5}}>
           <Box sx={{ display: 'flex', paddingLeft:2, paddingTop:2, alignItems: 'center'}}>
-            <Avatar alt={user && user.user.id === post.user.id ? user.user.username : post.user.username} src="..."/>
+            {/* <Avatar alt={user && user.user.id === post.user.id ? user.user.username : post.user.username} src="..."/> */}
             <Box sx={{display:'flex', justifyContent:'space-between', width:'100%'}}>
               <Box sx={{paddingLeft:2}}>
-                <span>{user && user.user.id === post.user.id ? user.user.username : post.user.username}</span>
+                {/* <span>{user && user.user.id === post.user.id ? user.user.username : post.user.username}</span> */}
                 <p>2022-06-02T20</p>
               </Box>
               {user && user.user.id === post.user.id && <Button onClick={() => onRemovePost!(post.id)} sx={{marginRight:2}} variant="outlined">
