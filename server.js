@@ -15,9 +15,6 @@ server.use(middlewares);
 server.use(
    jsonServer.rewriter({
       '/api/*': '/$1',
-   }),
-   auth.rewriter({
-      '/api/*': '/$1',
    })
 );
 
