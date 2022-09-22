@@ -16,7 +16,7 @@
 ​
 [Blog](https://drive.google.com/drive/folders/1kgW_lGdXUhNbkNHxa_GaWpMcxl7T_-Lm)
 
-![Preview](https://github.com/amirkhan-web05/blog/blob/master/src/assets/images/18-09-2022%2015-38-34.png "Blog")
+![Preview](https://github.com/amirkhan-web05/blog/blob/master/src/assets/images/blog.png "Blog")
 
 <h1>Описание</h1>
 
