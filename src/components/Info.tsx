@@ -17,7 +17,7 @@ export const Info:React.FC = () => {
   return (
     <Box className='box'>
       <Paper elevation={4} className='info'>
-        <Avatar className='info__avatar' style={{width:200, height:200, fontSize:58}} alt={user && user.user.username} src="..."/>
+        <Avatar className='info__avatar' style={{width:200, height:200, fontSize:58}} alt={user && user.user.username} src={'...'}/>
         <div className="info__user">
           <Typography variant="h4" gutterBottom>
             {user && user.user.username}

@@ -11,6 +11,8 @@ export const Post:React.FC = () => {
   const posts = useAppSelector(state => state.posts.posts)
   const user = useAppSelector(state => state.auth.auth)
 
+  console.log(posts)
+
   useEffect(() => {
     dispatch(fetchPosts())
   }, [])

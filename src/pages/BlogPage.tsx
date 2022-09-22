@@ -2,10 +2,12 @@ import React, { useRef, useState } from 'react'
 import { Button, ImageList, ImageListItem, Paper, TextareaAutosize, TextField, Typography } from '@mui/material'
 import { useAppDispatch, useAppSelector } from '../hooks'
 import { fetchAddPost } from '../redux/actions/posts'
+import { useNavigate } from 'react-router-dom'
 
 export const BlogPage:React.FC = () => {
   const dispatch = useAppDispatch()
   const user = useAppSelector(state => state.auth.auth.user)
+  const navigate = useNavigate()
   const [imageUrl, setImageUrl] = useState<string[]>([])
   const inputRef = useRef<any | HTMLInputElement>()
   const [form, setForm] = useState({
@@ -21,7 +23,6 @@ export const BlogPage:React.FC = () => {
     reader.onload = () => {
        if (file) {
           setImageUrl([...imageUrl, reader.result]);
-          console.log(reader.result)
        }
     };
 
@@ -38,6 +39,7 @@ export const BlogPage:React.FC = () => {
       alert('Title required!')
     } else {
       dispatch(fetchAddPost(fields))
+      navigate('/')
     }
   }
 

@@ -14,14 +14,14 @@ export const UsersPage:React.FC = () => {
 
   return (
     <Box sx={{paddingTop:5,  marginBottom:5}}>
-      {users.map(user => (
+      {users.length ? users.map(user => (
         <Paper key={user.id} className='container' elevation={3} sx={{width:'100%', paddingTop:2, paddingBottom:2, margin:3}}>
           <Box style={{display:'flex'}}>
             <Avatar style={{width:200, height:200, fontSize:58, marginLeft:20}} src='...' alt={user.username}/>
             <Typography variant='h4'>{user.username}</Typography>
           </Box>
         </Paper>
-      ))}
+      )) : <Typography style={{textAlign:'center', marginTop:30}} variant='h3'>Пользователей нет</Typography>}
     </Box>
   )
 }

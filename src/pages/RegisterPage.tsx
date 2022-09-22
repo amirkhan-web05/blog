@@ -26,7 +26,7 @@ export const RegisterPage:React.FC = () => {
       <Paper elevation={3} sx={{maxWidth:500, width:'100%', padding:5, margin:'0 auto'}}>
         <TextField value={form.username} onChange={e => setForm({...form, username:e.target.value})} sx={{margin:'10px 0'}} fullWidth label="Name" variant="outlined" />
         <TextField value={form.email} onChange={e => setForm({...form, email:e.target.value})} sx={{margin:'10px 0'}} fullWidth label="Email" variant="outlined" />
-        <TextField value={form.password} onChange={e => setForm({...form, password:e.target.value})} sx={{margin:'10px 0'}} fullWidth label="Password" variant="outlined" />
+        <TextField value={form.password} type="password" onChange={e => setForm({...form, password:e.target.value})} sx={{margin:'10px 0'}} fullWidth label="Password" variant="outlined" />
         <Button type='submit' variant='outlined'>
           Register
         </Button>

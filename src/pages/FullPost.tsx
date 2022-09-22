@@ -30,7 +30,7 @@ export const FullPost: React.FC = () => {
     <Box sx={{marginBottom:20}} className='container'>
       {fullPost.map((full:any) => (
         <Paper key={full.id} className='full' sx={{marginTop:5, marginBottom:15}} elevation={3}>
-          <div style={{display:'flex', alignItems:'center', width:'600px', marginLeft:'auto'}}>
+          <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', marginLeft:'auto'}}>
             <Typography key={full.id} sx={{textAlign:'center'}} variant='h3'>{full.title}</Typography>
             {user && user.user.id === full.user.id && <Button style={{marginLeft:'auto'}} onClick={() => onRemovePost!(full.id)} sx={{marginRight:2}} variant="outlined">
                   Delete
