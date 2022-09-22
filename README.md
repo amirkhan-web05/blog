@@ -8,7 +8,7 @@
 
   + React-redux, Redux-thunk
 
-+ Bootstrap5, Scss
++ MaterialUI, Scss
 
 + HTTPS, Axios, Json-server, Json-server-auth
 
